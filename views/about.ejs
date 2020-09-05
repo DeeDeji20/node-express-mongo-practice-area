@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+
+
+    <body>
+        <section class="nav">
+
+            <%- include('./partials/nav.ejs')%>
+        </section>
+
+        <section>
+            <div class="bookImg">
+                <img src="" alt="">
+                <h2 class="abtHeading">About Us</h2>
+            </div>
+        </section>
+        <section>
+            <div class="abtUs">
+                <p><span>Bookie</span> is a book search website that is focused to help readers find books of their choice and get valid information about books as well as newer editions of your choice of books. Motivated readers are provided with categories
+                    of books based on the readers' interest. <br> If the book is out of copyright, or the publisher gives permission, you'll be able to see a preview of the book, and in some cases the entire text. There are other recommendation based
+                    on the choice of search which may be of interest to the reader and can be accessed as well. <br> Bookie is centered on getting data from an external source which in this case is the google books API and providing useful information
+                    to users and readers.
+                    <p>
+
+            </div>
+        </section>
+
+        <div class="bookCover" id="bookCover"></div>
+        <section class="cat">
+            <h1>Categories</h1>
+            <p>Some of the categories of books we have include:</p>
+
+            <div class="catContainer">
+
+                <ul class="categories">
+                    <li> <i class="fa fa-spinner"></i>Fiction</li>
+                    <li> <i class="fa fa-spinner"></i>Non-fiction</li>
+                    <li> <i class="fa fa-spinner"></i>Poetry</li>
+                    <li> <i class="fa fa-spinner"></i>Romance</li>
+                    <li> <i class="fa fa-spinner"></i>Comic</li>
+                    <li> <i class="fa fa-spinner"></i>Mysery</li>
+                    <li> <i class="fa fa-spinner"></i>Horror</li>
+                    <li> <i class="fa fa-spinner"></i>Novel</li>
+                    <li> <i class="fa fa-spinner"></i>Crime</li>
+                    <li> <i class="fa fa-spinner"></i>History</li>
+                    <li> <i class="fa fa-spinner"></i>Literature</li>
+                    <li> <i class="fa fa-spinner"></i>Fantasy</li>
+                    <li> <i class="fa fa-spinner"></i>Picture book</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <%- include('./partials/footer.ejs')%>
+            <script src="about.js"></script>
+    </body>
+
+</html>

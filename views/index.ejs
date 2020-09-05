@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+
+
+    <body>
+        <%- include('./partials/nav.ejs')%>
+            <div class="container2">
+                <div class="search">
+                    <input class="input" type="text" name="" id="textVal" placeholder="Search Book">
+                    <i class="awesomeIcon fa fa-search" id="btn6"></i>
+                </div>
+                <div class="mainBody">
+                    <div class="contain">
+                        <div class=" left"></div>
+                        <div class=" right">
+                            <h1>categories</h1>
+                            <div class="btnCat ">
+
+                                <select name="Categories" id="catSelect" class="btn2">
+                                <option value="romance" class="opt">Romance</option>
+                                <option value="ficion" class="opt">Fiction</option>
+                                <option value="non-fiction" class="opt">Non-fiction</option>
+                                <option value="Mystery">Mystery</option>
+                                <option value="horror">Horror</option>
+                                <option value="picture book">Picture book</option>
+                                <option value="novel">Novel</option>
+                                <option value="crime">Crime</option>
+                                <option value="history">History</option>
+                                <option value="comic">Comic</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="literature">Literature</option>
+                            </select>
+                                <div class="btns">
+                                    <button class="btn " id="search">SEARCH</button>
+                                    <button class="btnClr " id="clear">CLEAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptyHead" id="emptyContainer">
+                    <div class="empty"> </div>
+                </div>
+            </div>
+            </div>
+
+            <%- include('./partials/footer.ejs')%>
+                <script src="index.js "></script>
+    </body>
+
+</html>

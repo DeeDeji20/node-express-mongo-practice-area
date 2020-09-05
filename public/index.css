@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* NAVIGATIONS */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(112, 246, 112);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navLinks a:hover {
+    color: #fff;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+
+/* SEARCH */
+
+.search {
+    position: relative;
+    left: 40%;
+    margin-top: 2%;
+    transition: 1s;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+
+/* SEARCH ICON */
+
+.awesomeIcon {
+    position: relative;
+    right: 28px;
+    top: 2px;
+    cursor: pointer;
+}
+
+
+/* BODY */
+
+.mainBody {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+}
+
+.container2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/design-desk-display-eyewear-313690.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.contain {
+    width: 80%;
+    height: 70%;
+    margin-top: -40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    padding: 10px 80px;
+}
+
+.left {
+    height: 100%;
+    background: url(./img/design-desk-display-eyewear-313690.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.right {
+    height: 100%;
+    padding: 25px 40px;
+    background-color: #fff;
+}
+
+h1 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(112, 246, 112);
+}
+
+.btnCat {
+    display: grid;
+    grid-gap: 5px;
+    margin-top: 80px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    transition: 1s;
+}
+
+.btn2 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    transition: 1s;
+}
+
+.btns {
+    display: flex;
+}
+
+.btnClr {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    transition: 1s;
+    margin-left: 5px;
+}
+
+.btnClr:hover {
+    background-color: rgb(205, 50, 50);
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #fff;
+}
+
+.btn:hover {
+    background-color: rgb(112, 246, 112);
+    cursor: pointer;
+}
+
+
+/*     
+.emptyHead {
+    display: none;
+} */
+
+.emptyHead h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.empty h1 {
+    text-align: center;
+}
+
+.vol {
+    border: 1px solid #333;
+}
+
+.empty {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.linkBtn {
+    /* width: 100%; */
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgb(112, 246, 112);
+    font-size: 1rem;
+    transition: 1s;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+}
+
+.linkBtn:hover {
+    background-color: rgba(230, 230, 230, 0.6);
+}
+
+
+/* New class */
+
+.details {
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 0px 0px 2px 2px rgb(184, 176, 176); */
+    animation: slide 1s ease-in;
+    padding-right: 20px;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    background-color: rgba(230, 230, 230, 0.6);
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(112, 246, 112);
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .details {
+        padding-left: 40px;
+    }
+    .empty {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        margin: 40px auto;
+        width: 80%;
+    }
+}
+
+@media(max-width:812px) {
+    body {
+        overflow-x: hidden;
+    }
+    .search {
+        left: 15%;
+        margin-top: 10%;
+    }
+    .left {
+        height: 0%;
+        background: none;
+    }
+    .contain {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .empty {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .details {
+        margin-bottom: 10px;
+        padding-left: 80px;
+    }
+}
